@@ -1,0 +1,22 @@
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+  .content {
+      display: contents;
+  }
+
+  .name-style{
+      margin-right: 35px;
+  }
+
+  .card-block{
+      color: black;
+  }
+
+  .select-sort{
+      text-align: end;
+  }
