@@ -9,13 +9,12 @@ import { IUsers } from '../users/users';
   styleUrls: ['./single-user.component.css']
 })
 export class SingleUserComponent implements OnInit {
-  user:IUsers[]=[];
+  user:any=[];
   constructor(private route: ActivatedRoute, private userService:UsersService) { }
 
   ngOnInit(): void {
     let id = this.route.snapshot.params['id'];
     this.userService.getUser(id).subscribe(u =>{
-      console.log(u);
       this.user = u;
     })
   }
